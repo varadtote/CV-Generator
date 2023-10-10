@@ -5,6 +5,7 @@ import "./Components/Resume/Resume.css";
 
 import React, { useState } from "react";
 import Sidebar from "./Components/Sidebar/Sidebar.jsx";
+import Accordion from "./Components/Accordion/Accordion";
 
 const App = () => {
 	//name change
@@ -32,6 +33,12 @@ const App = () => {
 		setcontactDetails((prevName) => ({ ...prevName, [field]: value }));
 	};
 
+	const toggleAccordion = () => {
+		setAccordion(!accordion);
+	};
+
+	const [accordion, setAccordion] = useState(false);
+
 	return (
 		<div>
 			<div className="container">
@@ -40,8 +47,11 @@ const App = () => {
 
 				{/* Input Form  */}
 				<div className="resumeInput">
-					<div className="accordian">
-						<form>
+					<h2>Resume Input</h2>
+
+					<Accordion id="accordion" Title={"Personal Details"}>
+						<div className="inputGrid">
+							<label>First Name</label>
 							<input
 								type="text"
 								placeholder="name"
@@ -52,8 +62,12 @@ const App = () => {
 									)
 								}
 							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
 							<input
-								type="text"
+								type="tel"
+								max={10}
 								placeholder="Contact"
 								onChange={(e) =>
 									handleContactChange(
@@ -62,8 +76,188 @@ const App = () => {
 									)
 								}
 							/>
-						</form>
-					</div>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Summary"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Skills"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Experience"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Education"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Courses & Certificates"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
+
+					<Accordion id="accordion" Title={"Intrests & Hobbies"}>
+						<div className="inputGrid">
+							<label>First Name</label>
+							<input
+								type="text"
+								placeholder="name"
+								onChange={(e) =>
+									handleNameChange(
+										"firstName",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+						<div className="inputGrid">
+							<label>Contact</label>
+							<input
+								type="tel"
+								max={10}
+								placeholder="Contact"
+								onChange={(e) =>
+									handleContactChange(
+										"contactNumber",
+										e.target.value,
+									)
+								}
+							/>
+						</div>
+					</Accordion>
 				</div>
 
 				{/* Resume Print  */}

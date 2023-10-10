@@ -25,12 +25,10 @@
 
 .resumeInput {
   height: 100vh;
-  width: 40vw;
+  width: 35vw;
   padding: 1rem;
 
   display: flex;
   flex-direction: column;
-
-  box-shadow: inset 1px 1px 3px 0.2px rgba(138, 131, 138, 1);
-
+  row-gap: 8px;
 }

@@ -1,0 +1,53 @@
+.accordianGrid {
+    height: max-content;
+    background-color: azure;
+    border: 1px solid black;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    border-radius: 5px;
+}
+
+#accordion {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.accordianGrid .title {
+    padding-bottom: 0.4rem;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleDiv svg {
+    height: 35px;
+    width: 35px;
+}
+
+.accordionForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.inputGrid {
+    display: flex;
+    align-items:center ;
+    column-gap: 8px;
+}
+
+input {
+    padding: 0.8rem;
+    border-radius: 3px;
+    border: 0.3px solid gray;
+}
+
+input:focus {
+    outline: none;
+}
