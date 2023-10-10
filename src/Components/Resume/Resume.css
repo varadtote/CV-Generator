@@ -1,0 +1,217 @@
+/* resume Font  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+/* gloabals css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-lato);
+}
+
+:root {
+  --font-lato: 'Lato', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-roboto: 'Roboto', sans-serif;
+
+  --resume-heading: 'Noto Sans', sans-serif;
+
+  /* default padding  */
+  --x-padding: 16px;
+
+  /* Heights  */
+  --header-height: 10vh;
+  --workspace-height: calc(100vh - var(--header-height));
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* utility classes  */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.contentPadding {
+  padding-block: 0.5rem;
+  padding-inline: 0.3rem;
+}
+
+/* resume  */
+
+
+.thickLine {
+  border-bottom: 1px solid black;
+}
+
+.fullName {
+  font-family: var(--resume-heading);
+  padding-block: 0px;
+  font-family: var(--resume-heading);
+  padding-block: 8px;
+  font-size: 18px;
+}
+
+
+/* Resume  */
+.resume {
+  height: var(--workspace-height);
+  width: 50vw;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.resume-heading {
+  font-family: var(--resume-heading);
+  padding-block: 8px;
+  font-size: 18px;
+}
+
+.gray {
+  color: rgb(152, 158, 159);
+}
+
+.resumePrint {
+  border: 1px solid black;
+  padding: 1rem;
+  padding-inline: 2rem;
+
+  background-color: white;
+  height: min-content;
+  width: 900px;
+}
+
+.fullName {
+  text-align: center;
+  font-size: 28px;
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.educationalDetails {
+  padding-block: 16px;
+}
+
+.presentDesignation {
+  text-align: center;
+}
+
+.summaryText {
+  font-size: 13px;
+  padding-block: 0.5rem;
+  padding-inline: 0.3rem;
+}
+
+
+
+.skillDomain {
+  gap: 13px;
+  font-size: 14px;
+}
+
+
+.skillNames {
+  column-gap: 8px;
+}
+
+.experienceTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.designationInfo {
+  padding-block: 4px;
+}
+
+.companyInfo {
+  font-size: 14px;
+}
+
+.locationDateInfo {
+  column-gap: 8px;
+  font-size: 12px;
+}
+
+.experienceList {
+  padding-inline: 28px;
+}
+
+.experienceList li {
+  list-style: disc;
+  font-size: 14px;
+}
+
+span {
+  position: relative;
+  left: -5px;
+}
+
+.educationGrid {
+  justify-content: space-between;
+}
+
+.university {
+  font-size: 18px;
+}
+
+.collegeName {
+  font-size: 16px;
+}
+
+.instutionalDetails {
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.collegeSummary {
+  font-size: 14px;
+}
+
+
+.certificate {
+  padding-left: 2rem;
+}
+
+.hobbies-grid {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.hobby {
+  flex-basis: 33%;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.hobbyName {
+  font-size: 16px;
+}
+
+.hobbyInfo {
+  font-size: 14px;
+  padding: 6px;
+}
+
+
